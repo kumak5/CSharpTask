@@ -3,7 +3,6 @@ Console.WriteLine("Введите число: ");
 string number = Console.ReadLine();
 int trueNumber = int.Parse(number);
 int lengthNamber = number.Length;
-
 main(trueNumber, lengthNamber);
 
 void main(int trueNumber, int lengthNamber)
