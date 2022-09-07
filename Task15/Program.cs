@@ -2,16 +2,21 @@
 // и проверяет, является ли этот день выходным.
 Console.WriteLine("Введите число дня недели: ");
 int day = int.Parse(Console.ReadLine());
-if (day != 1 && day != 2 && day != 3 && day != 4 && day != 5 && day != 6 && day != 7)
+main(day);
+void main(int day)
 {
-    Console.WriteLine("нужно ввести число от 1 до 7");
+    if (day != 1 && day != 2 && day != 3 && day != 4 && day != 5 && day != 6 && day != 7)
+    {
+        Console.WriteLine("нужно ввести число от 1 до 7");
+    }
+    else if (day == 6 || day == 7)
+    {
+        Console.WriteLine("этот день выходной");
+    }
+    else
+    {
+        Console.WriteLine("этот день будний");
+    }
 }
-else if (day == 6 || day == 7)
-{
-    Console.WriteLine("этот день выходной");
-}
-else
-{
-    Console.WriteLine("этот день будний");
-}
+
 
