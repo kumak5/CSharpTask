@@ -5,16 +5,8 @@ Console.WriteLine("Введите два числа: ");
 int GetSum(int numberA, int numberB)
 {
     int sum;
-    if (numberB < 0)
-    {
-        numberB = numberB * (-1);
-
-        sum = Convert.ToInt32(Math.Pow(numberA, numberB));
-    }
-    else
-    {
-        sum = Convert.ToInt32(Math.Pow(numberA, numberB));
-    }
+    int nBB = Math.Abs(numberB);
+    sum = Convert.ToInt32(Math.Pow(numberA, nBB));
     return sum;
 }
 
