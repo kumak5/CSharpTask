@@ -5,6 +5,9 @@ Console.WriteLine("Введите размер массива: ");
 
 int siseArray = 0;
 
+//  int siseArray = int.Parse(Console.ReadLine());
+
+
 try
 {
       
