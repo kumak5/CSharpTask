@@ -53,11 +53,6 @@ int sumNumberInArray(int[] array)
 void outputResultConsole(int sum)
 {
     Console.Write($"Сумма в масиве из {siseArray} чисел: {sum} ");
-    // for (int i = 0; i < siseArray; i++)
-    // {
-    //     System.Console.Write(array[i]);
-    //     System.Console.Write(" ");
-    // }
 }
 
 outputResultConsole(sumNumberInArray(getRandomArray()));
