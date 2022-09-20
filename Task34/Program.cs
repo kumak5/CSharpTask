@@ -4,14 +4,14 @@ Console.WriteLine("Введите размер массива: ");
 
 
 int siseArray = 0;
-
+int count = 0;
 //  int siseArray = int.Parse(Console.ReadLine());
 
 
 try
 {
-      
- siseArray = int.Parse(Console.ReadLine());
+
+    siseArray = int.Parse(Console.ReadLine());
 }
 catch (System.FormatException)
 {
@@ -34,12 +34,16 @@ int[] getRandomArray()
 
 void outResultConsole(int[] array)
 {
-    Console.Write($"Массив из {siseArray} чисел: ");
     for (int i = 0; i < siseArray; i++)
     {
-        System.Console.Write(array[i]);
-        System.Console.Write(" ");
+        if (array[i] % 2 == 0)
+        {
+            // System.Console.Write(array[i]);
+            // System.Console.Write(" ");
+            count++;
+        }
     }
+    Console.Write($"Количество четных чисел {count} в массиве из {siseArray} чисел: ");
 }
 
 outResultConsole(getRandomArray());
