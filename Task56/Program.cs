@@ -7,7 +7,7 @@ int line = 4;
 int column = 6;
 int[,] array = new int[line, column];
 // int[] arrayInLine = new int[column];
-int minSumInLine = 0;
+int minSumInLine = 9999;
 int lineIndex = 0;
 
 for (int i = 0; i < line; i++)
@@ -31,7 +31,7 @@ for (int i = 0; i < line; i++)
     Console.Write(sum);
     Console.WriteLine(" ");
 
-    if (minSumInLine < sum)
+    if (minSumInLine > sum)
     {
         minSumInLine = sum;
         lineIndex = i;
