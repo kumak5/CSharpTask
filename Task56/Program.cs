@@ -7,7 +7,7 @@ int line = 4;
 int column = 6;
 int[,] array = new int[line, column];
 // int[] arrayInLine = new int[column];
-int minSumInLine = 9999;
+int minSumInLine = Int32.MaxValue;
 int lineIndex = 0;
 
 for (int i = 0; i < line; i++)
